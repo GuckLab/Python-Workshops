@@ -6,6 +6,12 @@ notebooks have a short video guiding you through the code.
 These video tutorials will be available on the sharedrive (and possibly
 on Youtube). The tutorial topics and links are listed below.
 
+The aim is to have the topics which were covered in the
+`workshops <https://github.com/GuckLab/Python-Workshops/blob/main/workshops>`_
+available here in a concise format. See also the related
+`resources <https://github.com/GuckLab/Python-Workshops/blob/main/resources>`_. 
+
+
 How to use the tutorials
 ************************
 
