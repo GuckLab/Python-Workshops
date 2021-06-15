@@ -21,6 +21,13 @@ Installing on Windows:
 Installing on Mac
 - with Anaconda/Miniconda
 
+
+Using Jupyter Notebooks
+#######################
+
+Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
+
+
 Python data types
 #################
 
