@@ -25,10 +25,17 @@ Tutorial Topics
 
 Workshops and resources that cover similar topics will also be listed.
 
-Here are some examples of some tutorials that will soon be added:
+Here are some topics that will be covered here:
 
 #. How to install Python
 #. How to use Jupyter Notebooks
 #. Basic Python data types (strings, numbers and boolean)
 #. Python containers (lists, dictionaries)
 #. Python variables - how do they work?
+
+
+How to use Jupyter Notebooks
+############################
+
+Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
+
