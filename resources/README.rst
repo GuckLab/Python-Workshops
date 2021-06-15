@@ -6,7 +6,9 @@ The list is not exhaustive. If you know of good resources
 that you think should be listed here, please create a pull
 request or create an issue.
 
-If a related workshop or tutorial from this repository exists,
+If a related `workshop <https://github.com/GuckLab/Python-Workshops/blob/main/workshops>`_
+or `tutorial <https://github.com/GuckLab/Python-Workshops/blob/main/tutorials>`_
+from this repository exists,
 it will be listed beside the resource link.
 
 Resource Topics
