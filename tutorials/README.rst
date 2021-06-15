@@ -31,7 +31,7 @@ Tutorial Topics
 
 Workshops and resources that cover similar topics will also be listed.
 
-Here are some topics that will be covered here:
+Here are some topics that will be covered:
 
 #. How to install Python
 #. How to use Jupyter Notebooks
@@ -43,5 +43,28 @@ Here are some topics that will be covered here:
 How to use Jupyter Notebooks
 ############################
 
-Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
+- Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
 
+
+Basic Python data types (strings, numbers and boolean)
+######################################################
+
+- Check out the ``Python-Beginner-01-data-types.ipynb`` jupyter notebook.
+
+
+Python containers (lists, dictionaries)
+#######################################
+
+- Check out the ``Python-Beginner-02-containers.ipynb`` jupyter notebook.
+
+
+Python variables - how do they work?
+####################################
+
+- Check out the ``Python-Beginner-03-variables.ipynb`` jupyter notebook.
+
+
+Using the NumPy package
+#######################
+
+- Check out the ``Python-Beginner-04-numpy-basic.ipynb`` jupyter notebook.
