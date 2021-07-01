@@ -14,28 +14,31 @@ it will be listed beside the resource link.
 Resource Topics
 ***************
 
+Click here to see the `Beginner Python Tutorials <https://youtube.com/playlist?list=PL6TbaSfbh5ArFbFMsoAE8pkkJMSHlu-4f>`_ on Youtube.
+
+
 Python Installation
 ###################
 
-Installing on Windows:
-- with Anaconda/Miniconda
+- `Installation tutorial video <https://youtu.be/U5m-EBa8iCQ>`_
 
-Installing on Mac
-- with Anaconda/Miniconda
 
 
 Using Jupyter Notebooks
 #######################
 
-Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
+- Here is a great `tutorial on Jupyter Notebooks <https://www.youtube.com/watch?v=HW29067qVWk>`_ from Corey Schafer.
 
 
 Python data types
 #################
 
-`Introduction series on Python data types (strings, numbers, lists etc.) <https://www.youtube.com/watch?v=k9TUPpGqYTo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=2>`_
+- `Introduction series on Python data types (strings, numbers, lists etc.) <https://www.youtube.com/watch?v=k9TUPpGqYTo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=2>`_ by Corey Schafer
+- `Basic data types tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
+- Check out the ``Python-Beginner-01-data-types.ipynb`` jupyter notebook.
+
 
 Plotting/Displaying data
 ########################
 
-`Matplotlib beginner series <https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_>`_
+- `Matplotlib beginner series <https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_>`_
