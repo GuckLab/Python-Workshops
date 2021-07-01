@@ -49,7 +49,7 @@ Basic Python data types (strings, numbers and boolean)
 ######################################################
 
 - Check out the ``Python-Beginner-01-data-types.ipynb`` jupyter notebook.
-- `Basic data types tutorial video <https://youtu.be/_W3W3sfkKkw>`_
+- `Basic data types tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
 
 
 Python containers (lists, dictionaries)
@@ -63,7 +63,7 @@ Python variables - how do they work?
 ####################################
 
 - Check out the ``Python-Beginner-03-variables.ipynb`` jupyter notebook.
-- `Python variables tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
+- `Python variables tutorial video <https://youtu.be/_W3W3sfkKkw>`_
 
 
 Using the NumPy package
