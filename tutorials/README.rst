@@ -63,7 +63,7 @@ Python variables - how do they work?
 ####################################
 
 - Check out the ``Python-Beginner-03-variables.ipynb`` jupyter notebook.
-- `Python variables tutorial video <https://youtu.be/_W3W3sfkKkw>`_
+- `Python variables tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
 
 
 Using the NumPy package
