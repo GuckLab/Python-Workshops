@@ -36,6 +36,8 @@ Python data types
 - `Introduction series on Python data types (strings, numbers, lists etc.) <https://www.youtube.com/watch?v=k9TUPpGqYTo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=2>`_ by Corey Schafer
 - `Basic data types tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
 - Check out the ``Python-Beginner-01-data-types.ipynb`` jupyter notebook.
+- How to `limit the decimal places <https://www.youtube.com/watch?v=khKv-8q7YmY&t=360s>`_ in a `float`.
+- How to `display only a certain number of decimal places <https://www.youtube.com/watch?v=nghuHvKLhJA&t=507s>`_ in a `float`.
 
 
 Plotting/Displaying data
