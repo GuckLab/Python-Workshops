@@ -17,6 +17,12 @@ Resource Topics
 Click here to see the `Beginner Python Tutorials <https://youtube.com/playlist?list=PL6TbaSfbh5ArFbFMsoAE8pkkJMSHlu-4f>`_ on Youtube.
 
 
+How to use the terminal
+#######################
+
+- Using the `MacOS (mac) terminal <https://www.youtube.com/watch?v=GtwT_jl89-A>`_
+
+
 Python Installation
 ###################
 
