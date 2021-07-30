@@ -1,1 +1,5 @@
 numpy
+opencv-python
+dclab
+pandas
+matplotlib
