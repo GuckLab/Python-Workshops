@@ -41,9 +41,23 @@ Python data types
 
 - `Introduction series on Python data types (strings, numbers, lists etc.) <https://www.youtube.com/watch?v=k9TUPpGqYTo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=2>`_ by Corey Schafer
 - `Basic data types tutorial video <https://youtu.be/1iFsgAvS5rQ>`_
-- Check out the ``Python-Beginner-01-data-types.ipynb`` jupyter notebook.
+- Check out the `Python-Beginner-01-data-types.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/tutorials>`_ jupyter notebook.
+- Check out the `Python-Beginner-Workshop-01.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
 - How to `limit the decimal places <https://www.youtube.com/watch?v=khKv-8q7YmY&t=360s>`_ in a `float`.
 - How to `display only a certain number of decimal places <https://www.youtube.com/watch?v=nghuHvKLhJA&t=507s>`_ in a `float`.
+
+
+File formats and how to open files
+##################################
+
+- Check out the `Python-Beginner-Workshop-02.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
+
+
+How to use ``for`` loops
+########################
+
+- Check out the `Python-Beginner-Workshop-03.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
+- `Python beginner series from Corey Schafer <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`_
 
 
 Plotting/Displaying data
