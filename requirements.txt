@@ -3,3 +3,4 @@ opencv-python
 dclab
 pandas
 matplotlib
+scikit-image
