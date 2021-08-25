@@ -53,6 +53,13 @@ File formats and how to open files
 - Check out the `Python-Beginner-Workshop-02.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
 
 
+How to use ``if``, ``elif``, ``else`` statements
+################################################
+
+- Check out the `Python-Beginner-Workshop-04.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
+- `Python beginner series tutorial on the topic from Corey Schafer <https://www.youtube.com/watch?v=DZwmZ8Usvnk>`_
+
+
 How to use ``for`` loops
 ########################
 
