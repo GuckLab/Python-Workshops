@@ -4,3 +4,4 @@ dclab
 pandas
 matplotlib
 scikit-image
+scipy
