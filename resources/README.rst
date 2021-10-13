@@ -87,3 +87,10 @@ Curve Fitting
 #############
 
 - `Scipy documentation for non-linear least-squares fitting <https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html>`_.
+
+
+Functions
+#########
+
+- Check out the `Python-Beginner-Workshop-07.ipynb <https://github.com/GuckLab/Python-Workshops/tree/main/workshops>`_ jupyter notebook.
+- `Functions episode of this series on youtube <https://www.youtube.com/watch?v=9Os0o3wzS_I>`_
