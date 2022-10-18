@@ -15,5 +15,5 @@ This will allow you to run the Jupyter Notebook tutorials in the browser
 without needing any downloads.
 
  
- .. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/0d0c87789b81a3cfac0558b9fd4215b5e2c811ff
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/0d0c87789b81a3cfac0558b9fd4215b5e2c811ff
