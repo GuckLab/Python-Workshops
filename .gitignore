@@ -130,3 +130,6 @@ dmypy.json
 
 # pycharm project
 .idea/
+
+# profiling lprof files
+*.py.lprof
