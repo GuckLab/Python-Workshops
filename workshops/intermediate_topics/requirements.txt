@@ -1,1 +1,3 @@
 line_profiler
+pytest
+flake8
