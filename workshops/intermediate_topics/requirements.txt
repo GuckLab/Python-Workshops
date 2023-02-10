@@ -1,3 +1,5 @@
-line_profiler
-pytest
 flake8
+pytest
+pytest-benchmark
+line_profiler
+sphinx

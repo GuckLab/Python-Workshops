@@ -13,20 +13,20 @@ The topics we cover are listed below. These might be converted into tutorial vid
 on YouTube at some point.
 
 Code Topics covered:
+
 - Functions - Separability and Docstrings
-- Classes - abstract classes
-  - Structuring modules/package 
+- Classes - abstract classes - "Private" and Dunder Variables
 - Good clean code - Linting with flake8
 - Unit tests - pytest
 - Beyond `for` and `while` Loops - list comprehensions and numpy,
-  - break, continue try-except
-- Virtual Environments - Separating code installations
-- Errors - Custom Errors and Warnings
-- "Private" and Dunder Variables
+  - break, continue
+- Errors - Custom Errors and Warnings - try-except
 - Documentation - API and User Guide Docs with Sphinx
+- Structuring modules
 - Checking code speed & optimisation - Benchmarking and Profiling
-- Version control - Git basics
 - Setting up Python Package
+- Virtual Environments - Separating code installations
+- Version control - Git basics
 - Setting up CI/CD on GitLab/GitHub
 
 Analysis/Other Topics covered:
