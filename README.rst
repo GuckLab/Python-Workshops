@@ -14,6 +14,12 @@ All tutorials can be run by clicking on the below "launch binder" button.
 This will allow you to run the Jupyter Notebook tutorials in the browser
 without needing any downloads.
 
- 
+
+- Up-to-date Repo
 .. image:: https://mybinder.org/badge_logo.svg
-   :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/0d0c87789b81a3cfac0558b9fd4215b5e2c811ff
+ :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/HEAD
+
+
+- Intermediate Workshops
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/e931335f0e03249c5feac9657a0ab5f73b258e02
