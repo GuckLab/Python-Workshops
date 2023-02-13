@@ -5,3 +5,4 @@ pandas
 matplotlib
 scikit-image
 scipy
+jupyter
