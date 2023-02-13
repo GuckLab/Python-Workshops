@@ -10,7 +10,7 @@ The other half is the Mini-Project. The Mini-Project is a project/task that you
 want to get done using Python.
 
 The topics we cover are listed below. These might be converted into tutorial videos
-on YouTube at some point.
+on YouTube at some point. There are also powerpoint presentations in the Resources folder.
 
 Code Topics covered:
 

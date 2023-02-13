@@ -11,6 +11,8 @@ or `tutorial <https://github.com/GuckLab/Python-Workshops/blob/main/tutorials>`_
 from this repository exists,
 it will be listed beside the resource link.
 
+There are also powerpoint presentations in the Resources folder.
+
 Resource Topics
 ***************
 
