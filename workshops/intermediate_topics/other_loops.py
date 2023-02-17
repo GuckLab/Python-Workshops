@@ -1,8 +1,3 @@
 """
-Not written yet!
-
-List comprehensions
-Break, Continue
-NOT using loops sometimes (numpy)
-TQDM
+See "Python-Intermediate-Workshop-Other-Loops.ipynb"
 """
