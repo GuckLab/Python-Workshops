@@ -3,22 +3,14 @@
 
 See "testing_pytest.py" for a first introduction.
 
+See README.md for details on installation.
+
 Remember Arrange, Act, Assert
-
-The test is split up into:
-- Arrange: we set up any variables we eed, including the expected answer.
-- Act: Run the code that is being tested.
-- Assert: use the python `assert` statement to check if the actual and expected
-  output are the same.
-
 
 Let's write a more complicated function that needs to be tested...
 
 """
 
-
-# we write tests by simply creating a function that starts with "test"
-# here is a simple function
 import pytest
 
 
@@ -68,7 +60,7 @@ def test_simple_calculator_subtraction():
 
 
 def test_simple_calculator_floats():
-    """Test the addition and substraction of two floats."""
+    """Test the addition and subtraction of two floats."""
     # arrange
     number1 = 5.5
     number2 = 1.0
@@ -91,7 +83,7 @@ def test_simple_calculator_bad_numbers():
     number2 = 2
     operation = '+'
 
-    # act (here, the assert is the error check)
+    # act (here, our 'assert' step is the error check)
     with pytest.raises(ValueError):
         simple_calculator(number1, number2, operation=operation)
 
@@ -103,7 +95,7 @@ def test_simple_calculator_bad_operation():
     number2 = 2
     operation = '/'
 
-    # act (here, the assert is the error check)
+    # act (here, our 'assert' step is the error check)
     with pytest.raises(ValueError):
         simple_calculator(number1, number2, operation=operation)
 
