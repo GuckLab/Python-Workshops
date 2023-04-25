@@ -1,9 +1,12 @@
 """
-Using pytest.mark decorators allow us to do some cool stuff!
+# Checking that our custom error is raised in a test.
 
 See "testing_pytest.py" for a first introduction.
 
 See README.md for details on installation.
+
+Remember Arrange, Act, Assert
+
 """
 
 import pytest
@@ -30,7 +33,8 @@ def simple_calculator(number1, number2, operation='+'):
         raise BadOperationError("The `operation` must be either '+' or '-'.")
 
 
-@pytest.mark.skip
+# let's test the custom error
+
 def test_simple_calculator_bad_numbers():
     """Test the number arguments."""
     # arrange
@@ -43,10 +47,6 @@ def test_simple_calculator_bad_numbers():
         simple_calculator(number1, number2, operation=operation)
 
 
-my_reason_for_skipping = True
-
-
-@pytest.mark.skipif(my_reason_for_skipping, reason="Felt like it?")
 def test_simple_calculator_bad_operation():
     """Test the number arguments."""
     # arrange
@@ -58,5 +58,3 @@ def test_simple_calculator_bad_operation():
     with pytest.raises(BadOperationError):
         simple_calculator(number1, number2, operation=operation)
 
-    # you may ask, how do I know that the correct ValueError is being raised?
-    # For that, we must cover errors and custom errors!

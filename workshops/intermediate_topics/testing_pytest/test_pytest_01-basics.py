@@ -28,5 +28,5 @@ def test_add_some_numbers_int():
     assert addition == expected_value
 
 
-# now run `pytest workshops/intermediate_topics/testing_pytest/unit_testing_pytest.py`
+# now run `pytest workshops/intermediate_topics/testing_pytest/testing_pytest_01-basics.py`
 # or use PyCharm's "Run tests" option
