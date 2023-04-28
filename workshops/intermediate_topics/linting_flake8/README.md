@@ -25,7 +25,7 @@ In our case:
 
 `cd workshops/intermediate_topics/linting_flake8`
 
-`flake8 myproj.py`
+`flake8 example_messy_code.py`
 
 ### Configuring `flake8`
 
@@ -36,7 +36,7 @@ lines rather than the default limit of 80.
 You can put these new rules in a `.flake8` file in your project directory.
 Take a look at the `.flake8` file in this example.
 
-### Bonus IDE fun!
+### Bonus IDE Magic!
 
 - You can show a new (or any) line length limit with PyCharm!
     - Go to "Settings > Editor > Code Style" and just give a visual guide e.g. (80, 88)
