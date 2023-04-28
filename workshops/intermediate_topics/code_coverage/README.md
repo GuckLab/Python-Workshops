@@ -39,13 +39,23 @@ Details: https://coverage.readthedocs.io/en/7.2.3/
 
 ## Using coverage
 
-You can run coverage via PyCharm (which is super nice for visualising lines covered).
-Just right click on the test file and click "More Run/Debug > Run ... with Coverage".
-
-Or run it via the terminal:
+### Running `coverage` via the terminal
 
 `coverage run -m pytest test_myproj.py`
 
 then to see the report:
 
 `coverage report`
+
+### Running `coverage` with PyCharm
+
+You can run coverage via PyCharm (which is super nice for visualising
+lines covered). Just right-click on the test file/folder and click
+"More Run/Debug > Run ... with Coverage".
+
+Then after the tests have run, the code you are testing will be highlighted.
+If it isn't, go to the top menu "Run > Show Coverage Data" to look line-by-line.
+
+Then , you can go to "Run > Generate Coverage Report". Choose/create a folder
+such as `_cov` and tick "Open generated result in browser" which will open 
+an awesome interactive overview of your coverage!

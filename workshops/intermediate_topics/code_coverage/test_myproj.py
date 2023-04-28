@@ -1,6 +1,6 @@
 import pytest
 
-from myproj.myproj import simple_calculator
+from myproj.myproj import simple_calculator, NotANumberError, BadOperationError
 
 
 def test_simple_calculator_addition():
@@ -58,7 +58,7 @@ def test_simple_calculator_bad_numbers():
     operation = '+'
 
     # act (here, our 'assert' step is the error check)
-    with pytest.raises(ValueError):
+    with pytest.raises(NotANumberError):
         simple_calculator(number1, number2, operation=operation)
 
 
@@ -71,8 +71,5 @@ def test_simple_calculator_bad_operation():
     operation = '/'
 
     # act (here, our 'assert' step is the error check)
-    with pytest.raises(ValueError):
+    with pytest.raises(BadOperationError):
         simple_calculator(number1, number2, operation=operation)
-
-    # you may ask, how do I know that the correct ValueError is being raised?
-    # For that, we must cover errors and custom errors!
