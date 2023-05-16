@@ -5,7 +5,7 @@ More type-hint types
 """
 
 # python < 3.10 you need to import annotations (e.g. pipe) operator
-# from __future__ import annotations
+from __future__ import annotations
 
 import numpy as np
 
@@ -16,15 +16,15 @@ class SimpleSimulation:
                  image: np.ndarray,  # won't hint correctly if numpy isn't installed!
                  pixel_size: float,
                  alpha: int | float,
-                 beta_extended: list[tuple, tuple],
                  iterations: int,
-                 **kwargs: dict):
+                 beta_extended: list[tuple, tuple] = None,
+                 **kwargs: dict) -> None:
         """Use `self.run` to run a simulation."""
         self.image = image
         self.pixel_size = pixel_size
         self.alpha = alpha
         self.beta_extended = beta_extended
-        self.constants: list[tuple, tuple]
+        self.constants: list[tuple, tuple] = None
         self.iterations = iterations
         self.kwargs = kwargs
         self.output_array: np.ndarray = None
@@ -64,12 +64,12 @@ class ComplexSimulation:
 
 if __name__ == "__main__":
     # simple simulation type-hints
-    simple_runner = SimpleSimulation(...)
-    simple_runner.run()
+    simple_runner = SimpleSimulation(image=np.ones((512, 512)), pixel_size=2.3, alpha=5, iterations=1)
+    arr = simple_runner.run()
 
     # OR
 
     # complex simulation type-hints
-    simple_runner = SimpleSimulation(...)
-    complex_runner = ComplexSimulation(simple_runner)
-    complex_runner.run()
+    # simple_runner = SimpleSimulation(...)
+    # complex_runner = ComplexSimulation(simple_runner)
+    # complex_runner.run()
