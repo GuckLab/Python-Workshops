@@ -19,3 +19,29 @@ I prefer `line_profiler` because it has microsecond resolution.
 
 Warning: The `@profile` decorator will cause errors if you run your code normally!
          So it might be a good idea to have a separate `tests/profile_tests folder`.
+
+## Using `cProfile`
+
+cProfile is a built-in Python package with millisecond resolution.
+Here is how to use it:
+
+```python
+import cProfile
+import pstats
+
+def my_func():
+    """Some code I have"""
+    pass
+
+
+if __name__ == '__main__':
+    profiler = cProfile.Profile()
+    profiler.enable()
+    
+    # call your code
+    my_func()
+    
+    profiler.disable()
+    stats = pstats.Stats(profiler).sort_stats('tottime')
+    stats.print_stats(10)
+```
