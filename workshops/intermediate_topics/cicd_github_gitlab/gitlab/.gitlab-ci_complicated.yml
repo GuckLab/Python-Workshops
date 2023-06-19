@@ -1,0 +1,127 @@
+default:
+  tags:
+    - asprunner
+  image: "python:3.10"
+
+stages:
+  - Create Stable Branch
+  - Lint
+  - Test
+  - Docs
+
+# different before scripts
+  # WARNING: using two 'before_script' doesn't work in gitlab.
+  # If you want both, just include in one 'before_script'
+.before_script_python:
+  before_script:
+    - python --version
+    - python -m venv venv
+    - source venv/bin/activate
+    - python -m pip install --upgrade pip wheel
+
+.before_script_ssh:
+  before_script:
+    # install ssh-agent
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # run ssh-agent
+    - eval $(ssh-agent -s)
+    # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    # disable host key checking (NOTE: makes you susceptible to man-in-the-middle attacks)
+    # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+.before_script_python_ssh:
+  # WARNING: using two 'before_script' doesn't work in gitlab.
+  # If you want both, just include in one 'before_script'
+  before_script:
+    - python --version
+    - python -m venv venv
+    - source venv/bin/activate
+    - python -m pip install --upgrade pip wheel
+
+    # install ssh-agent
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # run ssh-agent
+    - eval $(ssh-agent -s)
+    # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    # disable host key checking (NOTE: makes you susceptible to man-in-the-middle attacks)
+    # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+
+flake8:
+  extends: .before_script_python
+  stage: Lint
+  allow_failure: false
+  script:
+    - python -m pip install flake8
+    - pip freeze
+    - flake8 ar_analysis
+    - flake8 tests
+
+pytest:
+  extends: .before_script_python_ssh
+  stage: Test
+  allow_failure: false
+  script:
+    - pip install -r tests/requirements.txt
+    - pip install coverage
+    # install opencv extra requirements here
+    - apt-get update -yqq
+    - apt-get install -yqq libgl1
+    # install dependencies
+    - pip install -e .
+    - pip freeze
+    - pytest --cov-config=.coveragerc --cov=ar_analysis tests/ --ignore=tests/benchmarking_tests --ignore tests/profiling_tests/
+    - coverage report
+    - coverage xml
+    - coverage html
+    # run the benchmarking tests here for now
+    - pytest tests/benchmark_tests/
+  coverage: '/TOTAL.*\s([.\d]+)%/'
+
+
+pages:
+  extends: .before_script_python_ssh
+  stage: Docs
+  script:
+    - pip install -r docs/requirements.txt
+    # install dependencies
+    - pip install -e .
+    - pip freeze
+    - sphinx-build -b html docs public
+  artifacts:
+    paths:
+    - public
+
+
+stable_branch:
+  only:
+    - tags
+  # need for pushing to the remote repo
+  extends: .before_script_ssh
+  stage: Create Stable Branch
+  allow_failure: false
+  script:
+    # for debugging
+    - echo git@$CI_SERVER_HOST:$CI_PROJECT_PATH.git
+    # use ssh remote origin rather than the defualt ci https
+    - git remote set-url --push origin git@$CI_SERVER_HOST:$CI_PROJECT_PATH.git
+    - git fetch origin
+    # for debugging
+    - git branch
+    # check for/create branch 'stable'
+    - LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+    - echo $LATEST_TAG
+    - git checkout $LATEST_TAG
+    # remove remote stable and push again updated to latest tag
+    - git branch -d stable &>/dev/null || true
+    - git branch
+    - git push origin -d stable
+    - git checkout -b stable
+    - git branch
+    - git push origin stable

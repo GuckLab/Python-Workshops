@@ -1,0 +1,16 @@
+
+stages:
+  - Lint
+
+flake8:
+  image: python:${PYTHON_VERSION}
+  parallel:
+    matrix:
+      - PYTHON_VERSION: [ "3.9", "3.10" ]
+  stage: Lint
+  allow_failure: false
+  script:
+    - python -m pip install flake8
+    - pip freeze
+    - flake8 ar_analysis
+    - flake8 tests

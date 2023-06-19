@@ -1,0 +1,49 @@
+# you can check if your .yml file contents are allowed with the gitlab
+# syntax checker: https://gitlab.<url>/<group>/<repo>/-/ci/lint
+# You can find it -> click CI/CD -> top right "CI lint"
+
+default:
+  image: "python:3.10"
+
+stages:
+  - Lint
+  - Test
+
+.before_script:
+  before_script:
+    - python --version
+    - python -m venv venv
+    - source venv/bin/activate
+    - python -m pip install --upgrade pip wheel
+
+
+flake8:
+  extends: .before_script
+  stage: Lint
+  allow_failure: false
+  script:
+    - python -m pip install flake8
+    - pip freeze
+    - flake8 ar_analysis
+    - flake8 tests
+
+pytest:
+  extends: .before_script
+  stage: Test
+  allow_failure: false
+  script:
+    - pip install -r tests/requirements.txt
+    - pip install coverage
+    # install opencv extra requirements here
+    - apt-get update -yqq
+    - apt-get install -yqq libgl1
+    # install dependencies
+    - pip install -e .
+    - pip freeze
+    - pytest --cov-config=.coveragerc --cov=ar_analysis tests/ --ignore=tests/benchmarking_tests --ignore tests/profiling_tests/
+    - coverage report
+    - coverage xml
+    - coverage html
+    # run the benchmarking tests here for now
+    - pytest tests/benchmark_tests/
+  coverage: '/TOTAL.*\s([.\d]+)%/'

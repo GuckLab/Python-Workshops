@@ -1,0 +1,33 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Install dependencies
+      run: |
+        # prerequisites
+        python -m pip install --upgrade pip wheel
+        python -m pip install coverage flake8 pytest
+    - name: Install dclab with all possible dependencies
+      run: |
+        pip install -e .
+    - name: List installed packages
+      run: |
+        pip freeze
+    - name: Test with pytest
+      run: |
+        coverage run --source=dclab -m pytest tests
+    - name: Lint with flake8
+      run: |
+        flake8 .
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
