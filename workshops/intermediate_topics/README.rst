@@ -52,9 +52,3 @@ Pre-requisites
 
 - Python 3.10 installed (or at least 3.6)
 - Know how to run code with the terminal, IDE, and via the Python Console
-
-Running the notebooks (branch `add_intermediate_workshops`)
-***********************************************************
-
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/add_intermediate_workshops

@@ -13,13 +13,5 @@ All tutorials can be found in the `tutorials folder <https://github.com/GuckLab/
 How to open the Workshop notebooks
 **********************************
 
-All workshops can be run by clicking on the below "launch binder" button.
-This will allow you to run the Jupyter Notebook workshops in the browser
-without needing any downloads.
-
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/GuckLab/Python-Workshops/HEAD
-
-
-Alternatively, you can download all notebooks as a ZIP file by
+You can download all notebooks as a ZIP file by
 `clicking here <https://github.com/GuckLab/Python-Workshops/archive/refs/heads/main.zip>`_.
