@@ -43,5 +43,4 @@ The tests are usually in a separate directory from the package code.
 
 - See the Errors and Warnings notebook for how to use and create custom errors.
   We test our custom errors in the `testing_pytest_03_custom_error.py` file
-- Code Coverage can be used to check how much of your code that your tests cover.
-- See the 
+- Code Coverage can be used to check how much of your code is covered by tests.

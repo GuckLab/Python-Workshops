@@ -84,9 +84,12 @@ def test_simple_calculator_bad_numbers():
     operation = '+'
 
     # act (here, our 'assert' step is the error check)
+    # "This code should raise a ValueError"
     with pytest.raises(ValueError):
         simple_calculator(number1, number2, operation=operation)
-
+    # which is equivalent to:
+    assert pytest.raises(ValueError,
+                         simple_calculator, number1, number2, operation)
 
 def test_simple_calculator_bad_operation():
     """Test the number arguments."""

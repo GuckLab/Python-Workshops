@@ -43,10 +43,10 @@ def test_simple_calculator_bad_numbers():
         simple_calculator(number1, number2, operation=operation)
 
 
-my_reason_for_skipping = True
+my_reason_for_skipping = False
 
 
-@pytest.mark.skipif(my_reason_for_skipping, reason="Camera not connected")
+@pytest.mark.skipif(my_reason_for_skipping, reason="Not yet implemented")
 def test_simple_calculator_bad_operation():
     """Test the number arguments."""
     # arrange
@@ -57,4 +57,3 @@ def test_simple_calculator_bad_operation():
     # act (here, our 'assert' step is the error check)
     with pytest.raises(BadOperationError):
         simple_calculator(number1, number2, operation=operation)
-
